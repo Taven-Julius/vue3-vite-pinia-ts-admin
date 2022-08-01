@@ -19,15 +19,17 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style scoped lang="scss">
-  .wrapper {
-    min-height: 100vh;
-    width: 100%;
-    .el-aside {
-      background: #f5f5f5;
-      text-align: center;
-    }
-    .el-header {
-      background: #c6e2ff;
-    }
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+
+  .el-aside {
+    background: orange;
+    text-align: center;
   }
+
+  .el-header {
+    background: #c6e2ff;
+  }
+}
 </style>
