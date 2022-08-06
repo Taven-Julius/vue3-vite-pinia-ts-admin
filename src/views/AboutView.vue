@@ -11,6 +11,7 @@ import { useCounterStore } from '@/stores/counter'
 const store = useCounterStore()
 
 const handleClick = () => {
+  console.log('res')
   store.increment()
 }
 </script>
