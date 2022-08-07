@@ -1,5 +1,10 @@
 kind: pipeline
+type: docker
 name: default
+
+trigger: 
+  branch:
+    - master
 
 steps:
   - name: restore-cache
@@ -14,10 +19,11 @@ steps:
         - ./yarn-cache
 
   - name: build
-    image: node:14.16
+    image: node:16
     commands:
       - node -v
       - npm -v
+      - npm config set registry https://registry.npmjs.org/
       - npm install
       - npm run build
 
